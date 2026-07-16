@@ -19,10 +19,26 @@ footer {
 }
 
 header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
   padding-right: 0;
   margin: 0 0 28px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.header-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.header-profile {
+  flex-shrink: 0;
+  margin: 0;
+  text-align: right;
+  white-space: nowrap;
 }
 
 header h1 {
@@ -31,6 +47,10 @@ header h1 {
 
 header p {
   margin-bottom: 8px;
+}
+
+.header-main > p:last-child {
+  margin-bottom: 0;
 }
 
 section {
@@ -43,4 +63,22 @@ footer {
   margin-top: 0;
   padding-top: 20px;
   border-top: 1px solid #e5e5e5;
+}
+
+footer .license {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .header-profile {
+    text-align: left;
+    white-space: normal;
+  }
 }

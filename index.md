@@ -1,6 +1,7 @@
 ---
-
-## layout: default
+layout: default
+title: FdKit — Android Fast Development Kit
+---
 
 ## FdKit — Android Fast Development Kit
 

@@ -1,7 +1,7 @@
 ---
-
-## layout: default
+layout: default
 title: Using FdKit — Agent Skill
+---
 
 ## Using FdKit — Agent Skill
 
