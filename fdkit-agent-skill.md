@@ -7,7 +7,7 @@ title: Using FdKit — Agent Skill
 
 Drop this skill into your **app** repo so Cursor, Claude Code, Codex, or another coding agent knows how to use [FdKit]({{ "/" | relative_url }}) — state, Compose screens, data layer, setup.
 
-Full skill: `[SKILL.md](https://github.com/TrueGrom/truegrom.github.io/blob/master/using-fdkit/SKILL.md)`.
+Full skill: [SKILL.md](https://github.com/TrueGrom/truegrom.github.io/blob/master/using-fdkit/SKILL.md).
 
 ## Install
 
