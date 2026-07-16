@@ -63,6 +63,4 @@ Copy the skill file into your agent’s instructions (`AGENTS.md`, project rules
 8. **[Datetime](https://github.com/TrueGrom/truegrom.github.io/blob/master/using-fdkit/SKILL.md#8-datetime-datetime)** — format extensions
 9. **[Rules checklist](https://github.com/TrueGrom/truegrom.github.io/blob/master/using-fdkit/SKILL.md#9-rules-checklist)**
 
----
-
 [← Back to FdKit overview]({{ "/" | relative_url }})
