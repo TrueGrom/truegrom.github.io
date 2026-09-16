@@ -34,7 +34,13 @@ dependencies {
 - [BOM](https://central.sonatype.com/artifact/io.github.truegrom/bom)
 - [Using FdKit — Agent Skill]({{ "/fdkit-agent-skill.html" | relative_url }}) — guide for AI coding agents
 
+Notable capabilities:
 
+- **Paged lists and grids** — `PagingContent` / `PagingGridContent` (same slot DSL). Loaded items
+  stay on screen; a failed refresh is a `RefreshError` banner, not a full-screen stub.
+- **Opt-in HTTP retries** — off by default. Bind `HttpRetryConfig` when you actually want backoff.
+
+Recipes, bindings, and slot names live in the [agent skill]({{ "/fdkit-agent-skill.html" | relative_url }}).
 
 ## Example — simple screen
 
@@ -108,5 +114,3 @@ fun UserScreen(onBack: () -> Unit) = ViewModelScreen<UserViewModel> {
     }
 }
 ```
-
-More patterns (errors, actions, pull-to-refresh, paging) are in the [agent skill]({{ "/fdkit-agent-skill.html" | relative_url }}).
