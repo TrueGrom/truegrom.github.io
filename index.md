@@ -37,7 +37,8 @@ dependencies {
 Notable capabilities:
 
 - **Paged lists and grids** — `PagingContent` / `PagingGridContent` (same slot DSL). Loaded items
-  stay on screen; a failed refresh is a `RefreshError` banner, not a full-screen stub.
+  stay on screen; a failed refresh is a `RefreshError` banner, not a full-screen stub. Rows the
+  pager inserts (date dividers) can span the full grid width via `itemSpan`.
 - **Opt-in HTTP retries** — off by default. Bind `HttpRetryConfig` when you actually want backoff.
 
 Recipes, bindings, and slot names live in the [agent skill]({{ "/fdkit-agent-skill.html" | relative_url }}).
@@ -98,7 +99,7 @@ fun UserScreen(onBack: () -> Unit) = ViewModelScreen<UserViewModel> {
         },
     ) {
         viewModel.Fetchable<User, UserState> {
-            retry { viewModel.load() }
+            retry { viewModel.load() }      // app-wide error UI, wired to retry
             Fetched { user ->
                 FdKitScreenColumn {
                     Text(user.name)
@@ -107,9 +108,8 @@ fun UserScreen(onBack: () -> Unit) = ViewModelScreen<UserViewModel> {
             Loading {
                 // Here’s your awesome loader.
             }
-            Error {
-                // Here’s your error stub.
-            }
+            // Or your own error stub instead of retry { } — they fill the same slot, last one wins:
+            // Error { e -> ... }
         }
     }
 }

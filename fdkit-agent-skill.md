@@ -54,9 +54,9 @@ Copy the skill file into your agent’s instructions (`AGENTS.md`, project rules
 ## What's inside
 
 1. **[Installation](https://github.com/TrueGrom/truegrom.github.io/blob/master/using-fdkit/SKILL.md#1-installation)** — BOM, modules
-2. **[One-time app setup](https://github.com/TrueGrom/truegrom.github.io/blob/master/using-fdkit/SKILL.md#2-one-time-app-setup)** — logging, `HttpConfigProvider`, `HttpRetryConfig`, Hilt, `FdkScreenDefaults`
+2. **[One-time app setup](https://github.com/TrueGrom/truegrom.github.io/blob/master/using-fdkit/SKILL.md#2-one-time-app-setup)** — logging, `HttpConfigProvider`, `HttpRetryConfig`, per-request timeouts, Hilt, `FdkScreenDefaults`
 3. **[Core utilities](https://github.com/TrueGrom/truegrom.github.io/blob/master/using-fdkit/SKILL.md#3-core-utilities-utils)** — `Result`, `Either`, `Value`
-4. **[Data layer](https://github.com/TrueGrom/truegrom.github.io/blob/master/using-fdkit/SKILL.md#4-data-layer-repository-http-error-network)** — `BaseRepository`, `http`, `HttpError`
+4. **[Data layer](https://github.com/TrueGrom/truegrom.github.io/blob/master/using-fdkit/SKILL.md#4-data-layer-repository-http-error-network)** — `BaseRepository`, `http`, `HttpError`, `createPager`
 5. **[State management](https://github.com/TrueGrom/truegrom.github.io/blob/master/using-fdkit/SKILL.md#5-state-management-viewmodel-state--the-core-of-fdkit)** — `StateViewModel`, builders, traits, delegates, `RemoteData`
 6. **[Screens](https://github.com/TrueGrom/truegrom.github.io/blob/master/using-fdkit/SKILL.md#6-screens-screen-ui-kit)** — `ViewModelScreen`, `Fetchable`, pull-to-refresh, `PagingContent` / `PagingGridContent`
 7. **[Crypto](https://github.com/TrueGrom/truegrom.github.io/blob/master/using-fdkit/SKILL.md#7-crypto-crypto)** — `CryptoManager`, AAD
